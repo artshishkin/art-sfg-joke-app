@@ -8,6 +8,7 @@ public class JokesController {
 
     @GetMapping({"/", ""})
     public String getJokesView() {
+
         return null;
     }
 
