@@ -14,11 +14,9 @@ public class JokesController {
         this.jokeService = jokeService;
     }
 
-    @GetMapping({"/", ""})
+    @GetMapping
     public String getJokesView(Model model) {
-        model.addAttribute("joke",jokeService.getJoke());
+        model.addAttribute("joke", jokeService.getJoke());
         return "chucknorris";
     }
-
-
 }
