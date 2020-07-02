@@ -17,7 +17,7 @@ public class JokesController {
     @GetMapping({"/", ""})
     public String getJokesView(Model model) {
         model.addAttribute("joke",jokeService.getJoke());
-        return null;
+        return "chucknorris";
     }
 
 
