@@ -1,14 +1,14 @@
-package com.artarkatesoft.artsfgjokeapp.services;
+package com.artarkatesoft.artsfgjokeapp.config;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-public class ServiceConfiguration {
+//@Configuration
+public class ChuckConfiguration {
 
-    @Bean
-    public ChuckNorrisQuotes getChuckNorrisQuotesBean(){
+//    @Bean
+    public ChuckNorrisQuotes chuckNorrisQuotes(){
         return new ChuckNorrisQuotes();
     }
 
